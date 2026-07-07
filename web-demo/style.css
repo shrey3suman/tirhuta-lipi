@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.panels {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  height: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.tirhuta-font {
+  font-family: 'Noto Sans Tirhuta', sans-serif;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}

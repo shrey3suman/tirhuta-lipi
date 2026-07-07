@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mithilakshar Typing Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tirhuta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Devanagari to Mithilakshar</h1>
+
+  <div class="panels">
+    <div class="panel">
+      <label for="devanagari">Type Devanagari here</label>
+      <textarea id="devanagari" placeholder="यहाँ लिखू..."></textarea>
+    </div>
+
+    <div class="panel">
+      <label for="tirhuta">Mithilakshar output</label>
+      <textarea id="tirhuta" class="tirhuta-font" readonly></textarea>
+    </div>
+  </div>
+
+  <button id="copyBtn">Copy Tirhuta text</button>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

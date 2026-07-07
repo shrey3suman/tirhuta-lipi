@@ -1,0 +1,15 @@
+{
+  "name": "tirhuta-transliterate",
+  "version": "0.1.0",
+  "description": "Devanagari to Tirhuta transliteration engine",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "tirhuta",
+    "mithilakshar",
+    "maithili",
+    "devanagari",
+    "transliteration"
+  ]
+}
