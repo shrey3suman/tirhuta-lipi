@@ -2,27 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mithilakshar Typing Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mithilākṣar — Devanagari to Tirhuta</title>
+  <meta name="description" content="A typing tool that converts Devanagari text to Mithilākṣar (Tirhuta) Unicode instantly, for anyone who reads Devanagari and wants to write in Maithili's own script.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tirhuta&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500&family=Noto+Sans+Tirhuta&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Devanagari to Mithilakshar</h1>
 
-  <div class="panels">
-    <div class="panel">
-      <label for="devanagari">Type Devanagari here</label>
-      <textarea id="devanagari" placeholder="यहाँ लिखू..."></textarea>
-    </div>
+  <div class="folio">
+    <svg class="corner corner-tl" viewBox="0 0 32 32"><path d="M2 16 L16 2 L30 16" /><circle cx="16" cy="16" r="2"/></svg>
+    <svg class="corner corner-tr" viewBox="0 0 32 32"><path d="M2 16 L16 2 L30 16" /><circle cx="16" cy="16" r="2"/></svg>
+    <svg class="corner corner-bl" viewBox="0 0 32 32"><path d="M2 16 L16 30 L30 16" /><circle cx="16" cy="16" r="2"/></svg>
+    <svg class="corner corner-br" viewBox="0 0 32 32"><path d="M2 16 L16 30 L30 16" /><circle cx="16" cy="16" r="2"/></svg>
 
-    <div class="panel">
-      <label for="tirhuta">Mithilakshar output</label>
-      <textarea id="tirhuta" class="tirhuta-font" readonly></textarea>
-    </div>
+    <header>
+      <p class="eyebrow">मिथिला · तिरहुता</p>
+      <h1>Devanagari to Mithilākṣar</h1>
+      <p class="subtitle">Type or paste Devanagari. Get correct Mithilākṣar Unicode, ready to copy anywhere.</p>
+    </header>
+
+    <div class="rule"></div>
+
+    <main class="panels">
+      <div class="panel">
+        <label for="devanagari">Devanagari</label>
+        <textarea id="devanagari" placeholder="यहाँ लिखू..." spellcheck="false"></textarea>
+      </div>
+
+      <div class="panel">
+        <label for="tirhuta">Mithilākṣar</label>
+        <textarea id="tirhuta" class="tirhuta-font" readonly></textarea>
+        <button id="copyBtn" type="button">
+          <span class="btn-label">Copy</span>
+        </button>
+      </div>
+    </main>
+
+    <footer>Shreya Suman</footer>
   </div>
-
-  <button id="copyBtn">Copy Tirhuta text</button>
 
   <script type="module" src="script.js"></script>
 </body>

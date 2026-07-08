@@ -1,29 +1,121 @@
+:root {
+  --paper: #F6F1E7;
+  --ink: #211D17;
+  --ink-soft: #5A5346;
+  --terracotta: #A84B32;
+  --leaf: #3E5940;
+  --rule: #DCD2BC;
+  --rule-strong: #B7A98C;
+}
+
+* { box-sizing: border-box; }
+
 body {
-  font-family: sans-serif;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.folio {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  border: 1px solid var(--rule-strong);
+  padding: 48px 40px 32px;
+}
+
+.folio::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid var(--rule);
+  pointer-events: none;
+}
+
+.corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+.corner circle { fill: var(--rule-strong); stroke: none; }
+.corner-tl { top: -10px; left: -10px; }
+.corner-tr { top: -10px; right: -10px; transform: scaleX(-1); }
+.corner-bl { bottom: -10px; left: -10px; }
+.corner-br { bottom: -10px; right: -10px; transform: scaleX(-1); }
+
+header { text-align: center; }
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.01em;
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: 480px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.rule {
+  height: 1px;
+  background: var(--rule);
+  margin: 32px 0;
 }
 
 .panels {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
 .panel {
-  flex: 1;
-  min-width: 280px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
 }
 
 textarea {
-  height: 200px;
+  height: 220px;
+  resize: vertical;
+  padding: 16px;
   font-size: 18px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  line-height: 1.6;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+textarea:focus {
+  border-color: var(--terracotta);
 }
 
 .tirhuta-font {
@@ -31,8 +123,42 @@ textarea {
 }
 
 button {
-  margin-top: 15px;
-  padding: 10px 16px;
-  font-size: 16px;
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Work Sans', sans-serif;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--ink);
+  border-radius: 2px;
   cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+button:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 2px;
+}
+
+button.copied {
+  border-color: var(--leaf);
+  color: var(--leaf);
+}
+
+footer {
+  margin-top: 48px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 720px) {
+  .folio { padding: 36px 20px 24px; }
+  .panels { grid-template-columns: 1fr; }
 }
