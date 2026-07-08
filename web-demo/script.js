@@ -1,4 +1,4 @@
-import { transliterate } from '../core/src/index.js';
+import { transliterate } from "./index.js";
 
 const devanagariBox = document.getElementById('devanagari');
 const tirhutaBox = document.getElementById('tirhuta');
