@@ -1,10 +1,10 @@
-# Mithilākṣar
+# Tirhuta Unicode Transliterator
 
 <p align="center">
 
-**A modern, open source Devanagari to Mithilākṣar (Tirhuta) Unicode transliteration tool.**
+**An open source Unicode transliteration tool for converting Devanagari text into Tirhuta (Mithilākṣar).**
 
-Preserving one of South Asia's historic writing systems through accessible, browser based software.
+Making one of South Asia's historic writing systems more accessible through modern, browser based software.
 
 </p>
 
@@ -12,11 +12,13 @@ Preserving one of South Asia's historic writing systems through accessible, brow
 
 ## Overview
 
-Mithilākṣar is a Unicode transliteration tool that converts Devanagari text into the traditional **Mithilākṣar (Tirhuta)** script in real time.
+Tirhuta Unicode Transliterator is an open source web application that converts Devanagari text into Unicode Tirhuta, also known as Mithilākṣar, in real time.
 
-While Unicode support for Tirhuta now exists, practical tools for typing and experimenting with the script remain limited. This project aims to lower that barrier by providing an intuitive browser interface that allows anyone familiar with Devanagari to begin writing in Mithilākṣar.
+Although Tirhuta has been included in the Unicode Standard for several years, practical tools for writing the script digitally remain limited. Most Maithili speakers today are familiar with Devanagari, making it difficult to adopt Tirhuta for everyday digital communication.
 
-The project combines a custom transliteration engine with a lightweight web interface inspired by the visual heritage of Mithila.
+This project aims to bridge that gap by providing a lightweight, browser based transliteration tool that generates standard Unicode Tirhuta output instantly.
+
+The application combines a custom JavaScript transliteration engine with a clean, heritage inspired interface influenced by the visual traditions of Mithila.
 
 ---
 
@@ -28,23 +30,24 @@ The project combines a custom transliteration engine with a lightweight web inte
 
 ## Why this project?
 
-Although Tirhuta has an official Unicode block, digital adoption has remained limited due to the lack of accessible tooling.
+Digital preservation requires more than encoding a script into Unicode. It requires practical tools that people can use every day.
 
-Most Maithili speakers today read and type primarily in Devanagari. By providing live Unicode transliteration, Mithilākṣar offers a practical bridge between contemporary typing habits and the traditional script.
+While Unicode support for Tirhuta exists, accessible transliteration tools remain scarce. This project allows users to continue typing in familiar Devanagari while producing Unicode compliant Tirhuta output that can be copied, shared, stored, and rendered across modern systems.
 
-The long term goal is to contribute to the accessibility, preservation, and everyday digital use of Mithilākṣar.
+The long term objective is to contribute to the digital accessibility, preservation, and wider adoption of the Tirhuta script.
 
 ---
 
 ## Features
 
-- Live Devanagari to Mithilākṣar Unicode transliteration
-- Instant copy to clipboard output
-- Browser based interface with no installation required
-- Responsive interface
+- Live Devanagari to Tirhuta Unicode transliteration
 - Unicode compliant output
+- Instant copy to clipboard
+- Browser based interface
+- Responsive design
 - Heritage inspired visual design influenced by Madhubani art
-- Open source development
+- Lightweight and fast
+- Open source
 
 ---
 
@@ -53,7 +56,7 @@ The long term goal is to contribute to the accessibility, preservation, and ever
 | Component | Technology |
 | ---------- | ---------- |
 | Front end | HTML, CSS, JavaScript |
-| Transliteration | Custom JavaScript engine |
+| Transliteration Engine | Custom JavaScript |
 | Character Encoding | Unicode (Tirhuta Block U+11480 to U+114DF) |
 | Hosting | Firebase Hosting |
 
@@ -71,35 +74,41 @@ tirhuta-lipi/
 │   ├── HTML
 │   ├── CSS
 │   ├── JavaScript
+│   ├── Images
 │   └── Assets
 │
 ├── firebase.json
-└── README.md
+├── README.md
+└── LICENSE
 ```
+
+---
+
+## How It Works
+
+The transliteration engine processes Unicode Devanagari input and maps supported characters and character sequences to their corresponding Tirhuta Unicode code points.
+
+All processing takes place locally within the browser. No text is transmitted to a server, allowing the tool to remain lightweight, responsive, and privacy friendly.
+
+The generated output can be copied directly into any Unicode compatible document, website, or application that supports Tirhuta fonts.
 
 ---
 
 ## Current Status
 
-The project is under active development.
+The project is actively under development.
 
-Current priorities include:
-
-- Improving orthographic accuracy
-- Expanding conjunct support
-- Refining transliteration rules
-- Improving accessibility
-- Strengthening documentation
+Current work focuses on improving transliteration accuracy, refining orthographic rules, expanding conjunct support, and improving the overall user experience.
 
 ---
 
 ## Limitations
 
-Mithilākṣar performs Unicode transliteration based on implemented mapping rules.
+This tool performs Unicode transliteration based on implemented mapping rules.
 
-Certain inputs, including personal names, uncommon spellings, historical orthography, or context dependent forms, may require manual review.
+Certain names, uncommon spellings, historical orthography, and context dependent forms may require manual review.
 
-Continued improvements will expand linguistic coverage over time.
+Additional linguistic rules and edge cases will continue to be incorporated in future releases.
 
 ---
 
@@ -107,41 +116,43 @@ Continued improvements will expand linguistic coverage over time.
 
 ### v0.x
 
-- Improved conjunct handling
-- Better orthographic rules
-- Mobile optimization
-- Additional copy and export features
-- Keyboard shortcuts
+- Improve conjunct handling
+- Improve orthographic accuracy
+- Better support for names
+- Additional transliteration rules
+- Mobile experience improvements
+- Documentation updates
 
 ### v1.0
 
 - Stable transliteration engine
-- Comprehensive documentation
 - Expanded linguistic support
-- Public API
 - Browser extension
-- Dedicated typing keyboard
+- Public API
+- Dedicated Tirhuta keyboard
+- JavaScript package
+- Comprehensive documentation
 
 ---
 
 ## Contributing
 
-Suggestions, bug reports, corrections, and feature requests are welcome.
+Contributions, suggestions, bug reports, and discussions are welcome.
 
-If you discover an issue with transliteration, please include:
+When reporting a transliteration issue, please include:
 
 - Input text
 - Expected output
 - Actual output
-- Additional linguistic context, if applicable
+- Additional linguistic context, if available
 
 ---
 
 ## Design Philosophy
 
-The interface intentionally follows a restrained visual style inspired by traditional Mithila manuscripts and Madhubani art.
+The interface draws inspiration from traditional Mithila manuscripts and Madhubani art while maintaining a clean, modern, and accessible user experience.
 
-Rather than recreating historical manuscripts directly, the design seeks to balance cultural inspiration with modern usability and readability.
+The objective is to celebrate the cultural heritage of Mithila without compromising readability, usability, or performance.
 
 ---
 
@@ -157,4 +168,4 @@ Research • Transliteration Engine • Front end Development • UI/UX • Visu
 
 ## License
 
-This project is released under the **MIT License**.
+Released under the **MIT License**.
