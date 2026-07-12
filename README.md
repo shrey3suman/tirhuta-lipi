@@ -45,7 +45,7 @@ The long term objective is to contribute to the digital accessibility, preservat
 - Instant copy to clipboard
 - Browser based interface
 - Responsive design
-- Heritage inspired visual design influenced by Madhubani art
+- Culturally inspired visual design influenced by Madhubani Chitrakala
 - Lightweight and fast
 - Open source
 
