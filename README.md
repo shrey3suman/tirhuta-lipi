@@ -18,7 +18,7 @@ Although Tirhuta has been included in the Unicode Standard for several years, pr
 
 This project aims to bridge that gap by providing a lightweight, browser based transliteration tool that generates standard Unicode Tirhuta output instantly.
 
-The application combines a custom JavaScript transliteration engine with a clean, heritage inspired interface influenced by the visual traditions of Mithila.
+The application combines a custom JavaScript transliteration engine with a clean, culturally inspired interface influenced by the visual traditions of "Madhubani Chitrakala".
 
 ---
 
