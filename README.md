@@ -158,12 +158,13 @@ The objective is to celebrate the cultural heritage of Mithila without compromis
 
 ## Credits
 
-**Designed & Developed by**
+Designed & Developed by
 
 **Shreya Suman**
 
-Research • Transliteration Engine • Front end Development • UI/UX • Visual Design • Deployment
+© 2026 Shreya Suman
 
+Research • Transliteration Engine • Front-end Development • UI/UX • Visual Design • Deployment
 ---
 
 ## License
