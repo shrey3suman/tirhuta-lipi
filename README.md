@@ -162,8 +162,6 @@ Designed & Developed by
 
 **Shreya Suman**
 
-© 2026 Shreya Suman
-
 Research • Transliteration Engine • Front-end Development • UI/UX • Visual Design • Deployment
 ---
 
