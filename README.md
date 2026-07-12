@@ -163,6 +163,7 @@ Designed & Developed by
 **Shreya Suman**
 
 Research • Transliteration Engine • Front-end Development • UI/UX • Visual Design • Deployment
+
 ---
 
 ## License
